@@ -5,3 +5,12 @@
     .dropdown-menu.show{
         display: flex;
     }
+ 
+        /* footer */
+        .ul-list{
+            list-style: none;
+        }
+        .pi {
+            cursor: pointer;
+
+        }
