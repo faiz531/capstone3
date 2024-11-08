@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <h1>sign in</h1>
+    
 
     <div class="container-fluid">
 
@@ -55,8 +55,8 @@
               </nav>
                               <!-- 2nd nav bar -->
             
-            <nav class="mt-4">
-                <div class="container-fluid">
+            <nav class="mt-4 navbar navbar-expand-lg">
+                <div class="container-fluid ">
                     <div class="row">
                         <div class="col-2">
                           <a href="../../index.html" class="pi"><img src="../../pictures/logo.svg" alt=""></a>  
@@ -250,32 +250,48 @@
 
                      <!-- form -->
 
-            <form class="p-5" id="form-1">
+            <!-- <form class="p-5" id="formsignin">
                 <div class="mb-3 ">
                     <h3>LOGIN</h3>
                     <p>Enter your username and password to login.</p>
                   <label for="exampleInputEmail1" class="form-label">Username or mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp">
                   
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" >
                 </div>
                 <div class="mb-3 form-check d-flex justify-content-between">
                   
                    <div><input type="checkbox" class="form-check-input  " id="exampleCheck1"><label class="form-check-label" for="exampleCheck1">Remember me</label></div> <div><p class="">Lost password</p></div>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
+              </form> -->
+
+<div class="d-flex justify-content-center mt-4">
+
+              <form class="p-5  justify-content-center border border-primary w-50 border-4" id="signinForm" >
+                <div class="mb-3 ">
+                    <h3>Register</h3>
+                    <p>Fill out the form below to register account.</p>
+                  <label for="exampleInputEmail1" class="form-label">Email Address</label><br>
+<input type="text" id="signupmail" placeholder="email " required>                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label" >Password</label><br>
+                  <input type="password" id="signUppassword" placeholder="password" required>
+                </div>
+                
+                <button type="submit"  class="btn btn-primary" id="Register">Register</button>
               </form>
-
-
+            </div>
      <!-- footer -->
 
 
      <footer class="container-fluid mt-4">
         <div class="row">
-        <div class="col-3 mt-3">
+        <div class="col mt-3">
         <a href="./index.html" class="bi"><img src="../../pictures/logo.svg" alt=""></a>
         
         <p class="mt-4">Lorem ipsum dolor sit amet, con sectetur <br>
@@ -320,7 +336,7 @@
         <p class="mt-3">© 2024 Greenmart. All rights reserved.</p>
         
         </div>
-        <div class="col-3">
+        <div class="col">
         <ul class="text-dark mt-4 ul-list">
         <li class="mb-4 pi" ><b>About</b></li>
         <li class="mb-4 pi">About us</li>
@@ -329,7 +345,7 @@
         <li class="mb-4 pi">FQA</li>
         </ul>
         </div>
-        <div class="col-3">
+        <div class="col">
         <ul class="text-dark mt-4 ul-list">
         <li class="mb-4 pi" ><b>HELP & GUIDE</b></li>
         <li class="mb-4 pi ">Trem of Use</li>
@@ -338,14 +354,14 @@
         
         </ul>
         </div>
-        <div class="col-3  mt-3">
+        <div class="col  mt-3">
         <h5>NEWSLETTER</h5>
         <p>Don’t miss out<b> thousands of great deals</b> & promotions.</p>
         <input type="password" id="inputPassword6" class="form-control me-5" aria-describedby="passwordHelpInline" placeholder="Email adressess..." >
         
         <p ><button type="button" class="btn btn-success mt-3 ">Subscribe</button></p><br><br><br>
         
-        <img class="pi" src="../../pictures/payment.png" alt="">
+        <img class="pi img-fluid" src="../../pictures/payment.png" alt="">
         
         </div>
         </div>
@@ -355,6 +371,8 @@
 
 
     </div>
+
+    <!-- <script src="../../js/sign-up.js"></script> -->
 
     <script src="../../js/sign-in.js"></script>
 </body>
