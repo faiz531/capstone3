@@ -58,10 +58,10 @@
             <nav class="mt-4 navbar navbar-expand-lg">
                 <div class="container-fluid ">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col">
                           <a href="../../index.html" class="pi"><img src="../../pictures/logo.svg" alt=""></a>  
                         </div>
-                        <div class="col-4 ms-5">  
+                        <div class="col ms-5">  
                             <div class="input-group">
                     
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -69,23 +69,33 @@
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                               </svg></span>
                           </div></div>
-                        <div class="col-2 "> 
+                        <div class="col "> 
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill text-success " viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                           </svg><b>Online Shopping</b>
                           <p class="text-secondary">+ 78 925-942-2900</p></div>
-                        <div class="col-2 ">
+                        <div class="col ">
                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill text-success" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                           </svg><B>Account</B>
                     <p class="text-secondary pi"> <a href="../../pages/sign in/sign-in.html" class="text-dark">Login</a>  / <a href="../../pages/sign up/sign-up.html " class="text-dark">Register</a> </p>
                 </div> 
-                        <div class="col-1 bg-success ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill text-white" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                          </svg><b class="text-white">Card</b>
-                          <p class="text-white">$0.00</p>
-                        </div>
+                
+                <div class="col-1">
+                  <button class="btn btn-success addcard  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill text-white" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>Card $0.00</button>
+    
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
             
                     </div>
             
@@ -273,7 +283,7 @@
 
               <form class="p-5  justify-content-center border border-primary w-50 border-4" id="signinForm" >
                 <div class="mb-3 ">
-                    <h3>Register</h3>
+                    <h3>Sign In</h3>
                     <p>Fill out the form below to register account.</p>
                   <label for="exampleInputEmail1" class="form-label">Email Address</label><br>
 <input type="text" id="signupmail" placeholder="email " required>                  
